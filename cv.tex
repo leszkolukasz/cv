@@ -1,0 +1,231 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Class
+% Version 2.0 (12/10/23)
+%
+% This class originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Omar Roldan
+% Based on a template by  Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\usepackage{enumitem}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}  
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} 
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	{ \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{Łukasz Leszko}}}} % First name
+	
+	\vspace{6pt}
+	
+	{\Large Software Engineer} % Career or current job title
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.27\textwidth} % 20% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% \icon{Globe}{11}{\href{http://www.google.com}{portafolio.com}}\\ 
+    \icon{Phone}{11}{+48 ...}\\
+    \icon{Envelope}{11}{\href{mailto:leszko.lucas@gmail.com}{leszko.lucas@gmail.com}}\\	
+    % \icon{MapMarker}{11}{City, Country}\\
+	
+\end{minipage}
+\begin{minipage}[t]{0.2\textwidth} % 27% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+    \icon{Github}{11}{\href{https://github.com/leszkolukasz}{leszkolukasz}}\\
+    \icon{LinkedinSquare}{11}{\href{https://www.linkedin.com/in/leszkolukasz}{leszkolukasz}}\\    
+    
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.40\textwidth}
+    \cvsect{Summary}
+	\vspace{-6pt}
+ 
+    %Dummy text
+	Student at the University of Warsaw with a background in competitive programming and software engineer aiming to specialize in Machine Learning. Skilled in mathematics and passionate about applying knowledge to impactful projects. \\
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.55\textwidth}
+    \cvsect{Skills}
+    \vspace{-6pt}
+    
+    \begin{minipage}[t]{0.15\textwidth}
+        \textbf{Languages:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.75\textwidth}
+      \textsl{Good knowledge of}: Java, Python, C++, TypeScript, HTML, CSS, SQL.\\
+      \textsl{Basic knowledge of}: Kotlin, Rust, OCaml, Haskell, R.
+    \end{minipage}
+    \vspace{4mm}
+    
+    \begin{minipage}[t]{0.15\textwidth}
+        \textbf{Frameworks:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.75\textwidth}
+      \textsl{Good knowledge of}: React, Pytorch, Numpy, Polars \\
+      \textsl{Basic knowledge of}: JAX, ONNX, Sklearn, Spring, Django, FastAPI, Next.js, Astro, React Native
+    \end{minipage}
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-5 pt}
+\cvsect{Experience}
+\begin{entrylist}
+    \entry
+        {7/2024 -- 10/2024}
+		{Junior Software Engineer}
+		{RadCode, Warsaw}
+		{\\
+        \textbf{\small Project}\\
+        \vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Worked as a contractor for an American startup founded by a Forbes 30 Under 30 laureate.
+            \item Developed a Web3 protocol with goal to revolutionize DeFi.
+        \end{itemize}
+        \vspace{2mm}
+        \texttt{TypeScript, Solidity, ReactJS, Hardhat, Vite, GraphQL}
+        }
+	\entry
+        {7/2023 -- 7/2024}
+		{Junior Software Engineer}
+		{Cognizant, Warsaw}
+		{\\
+        \textbf{\small Project 1}\\
+        \vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Acted as a project lead, actively contributing to the development of an internal web application using the Kanban methodology.
+            \item Successfully deployed version 2.0 of the application.
+        \end{itemize}
+        \vspace{2mm}
+        \texttt{Java, Kotlin, Spring, Jenkins, TypeScript, ReactJS, Vite, MongoDB, SendGrid}
+        \\\\
+        \textbf{\small Project 2}\\
+        \vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Worked as contractor for American company.
+            \item Refactored and optimized the application's codebase to adhere to clean code standards.
+            \item Integrated Kafka using outbox pattern for efficient message queuing and processing.
+        \end{itemize}
+        \vspace{2mm}
+        \texttt{Java, Spring, GitHub Actions, TypeScript, ReactJS, PostgreSQL, Kafka}}
+
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-15 pt}
+\cvsect{Education}
+\begin{entrylist}
+    \entry
+		{2024 - current}
+		{Master of Machine Learning}
+		{University of Warsaw}
+		{Elective and relevant courses: Data Mining, Robot Learning}
+    \entry
+		{2022 - current}
+		{Bachelor of Mathematics }
+		{University of Warsaw}
+		{Relevant courses: Statistical Data Analysis}
+    \entry
+		{2021 - 2024}
+		{Bachelor of Computer Science}
+		{University of Warsaw}
+		{\textsl{Elective and relevant courses}: Functional programming (OCaml), Machine Learning, Reasoning in Software Systems\\ \textsl{Thesis}: Gitoptim - a tool for automating programmer's work using large language models}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+\vspace{-15 pt}
+\cvsect{Projects}
+\begin{entrylist}
+    \entry
+		{\phantom}
+		{Git Optim}
+		{}
+		{Developed as part of my Bachelor's thesis in Computer Science. Web application that utilizes Large Language Models to analyze code in git repositories. It reports bugs, offers code improvement suggestions, and automates the generation of unit and Memlab tests.\\[2mm]
+        \texttt{TypeScript, Next.js, FastAPI, Typer, Python, Accelerate, Llama.cpp, ChromaDB}}
+    \entry
+		{}
+		{\vspace{-3mm}}
+		{}
+		{Many more projects are available on my Github profile.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+\vspace{-15 pt}
+	\cvsect{Achievements}
+\vspace{-10 pt}
+\begin{itemize}[parsep=0pt,partopsep=0pt,leftmargin=26mm]
+    \item Distinction in the 1st round of the 28th Polish Olympiad in Informatics
+    \item Finalist of the 4th edition of the Jagiellonian Mathematics Tournament
+    \item Tutored two participants of Polish Olympiad in Informatics. One reached international level.
+\end{itemize}
+ 
+
+%----------------------------------------------------------------------------------------
+%	ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+\vspace{-7 pt}
+	\cvsect{Languages}
+    \vspace{-6pt}
+    
+    \hspace{26mm} \textbf{English} - B2/C1\hspace{3pt}(FCE Certificate), \textbf{ Polish} - native
+
+\vspace{-5 pt}
+	\cvsect{Interests}
+    \vspace{-6pt}
+    
+    \begin{itemize}[topsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=26mm]
+    \item Open source: \underline{contributed to LibreOffice}
+    \item Programming languages (compilers, language design)
+    \item Linux
+\end{itemize}
+
+\vspace*{\fill}
+
+% I hereby give consent for my personal data to be processed by Jane Street for the purpose of conducting recruitment for the position for which I am applying.
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
