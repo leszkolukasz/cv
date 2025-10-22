@@ -21,7 +21,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\documentclass[8pt]{developercv} % Default font size, values from 8-12pt are recommended
 \usepackage{multicol}
 \usepackage{enumitem}
 \setlength{\columnsep}{0mm}
@@ -43,6 +43,8 @@
 	\vspace{6pt}
 	
 	{\Large ML Engineer} % Career or current job title
+    \\[12pt]
+    \small{Preferred locations: Warsaw, remotely or short-term abroad.}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.27\textwidth} % 20% of the page width for the first row of icons
@@ -50,7 +52,7 @@
 	
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
 	% \icon{Globe}{11}{\href{http://www.google.com}{portafolio.com}}\\ 
-    \icon{Phone}{11}{+48 ...}\\
+    \icon{Phone}{11}{+48 ... }\\ %691 885 163}\\
     \icon{Envelope}{11}{\href{mailto:leszko.lucas@gmail.com}{leszko.lucas@gmail.com}}\\	
     \icon{Home}{11}{\href{https://lukasz.leszko.dev/}{lukasz.leszko.dev}}\\
 
@@ -70,15 +72,15 @@
 %	INTRODUCTION, SKILLS AND TECHNOLOGIES
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.40\textwidth}
+\begin{minipage}[t]{0.45\textwidth}
     \cvsect{Summary}
 	\vspace{-6pt}
  
     %Dummy text
-	Student at the University of Warsaw with a background in competitive programming and software engineer aiming to specialize in Machine Learning. Skilled in mathematics and passionate about applying knowledge to impactful projects. \\
+	Student at the University of Warsaw with a strong background in competitive programming and \textbf{1 year} of professional software development experience. Knowledgeable about applying machine learning to real-world projects, such as \textbf{Git Optim} and \textbf{QUMAM}. Solid foundation in mathematics and driven to apply technical expertise to high-impact solutions.
 \end{minipage}
 \hfill % Whitespace between
-\begin{minipage}[t]{0.55\textwidth}
+\begin{minipage}[t]{0.50\textwidth}
     \cvsect{Skills}
     \vspace{-6pt}
     
@@ -120,20 +122,41 @@
     \end{minipage}
 \end{minipage}
 
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+\cvsect{Projects}
+\begin{entrylist}
+    \entry
+		{\phantom}
+		{Git Optim}
+		{}
+		{Developed as part of my Bachelor's thesis in Computer Science. Web application that utilizes Large Language Models (\textbf{LLMs}) to monitor CI/CD pipelines for warnings and errors in job logs. Upon detection, it automatically creates pull request with suggested fixes.\\[2mm]
+        \texttt{Python, Accelerate, Llama.cpp, ChromaDB, TypeScript, Next.js, FastAPI}}
+    \entry
+		{\phantom}
+		{\underline{\href{https://qumam.edu.pl}{QUMAM}}}
+		{}
+		{Learning platform for managing math courses and students. It offers rich UI for creating courses and exercises, as well as a student portal for tracking progress. Includes \textbf{LLM} capabilities like math task generation from image.\\[2mm]
+        \texttt{Python, LiteLLM, OpenAI, TypeScript, React, Django, PostgreSQL}}
+    \entry
+		{}
+		{\vspace{-3mm}}
+		{}
+		{Many more projects are available in my \underline{\href{https://lukasz.leszko.dev/}{portfolio}} and \underline{\href{https://github.com/leszkolukasz}{GitHub profile}}.}
+\end{entrylist}
 
 %----------------------------------------------------------------------------------------
 %	EXPERIENCE
 %----------------------------------------------------------------------------------------
-\vspace{-5 pt}
+\vspace{-15pt}
 \cvsect{Experience}
 \begin{entrylist}
     \entry
         {7/2024 -- 10/2024}
 		{Junior Software Engineer}
 		{RadCode, Warsaw}
-		{\\
-        \textbf{\small Project}\\
-        \vspace{-10pt}
+		{
         \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
             \item Worked as a contractor for an American startup founded by a Forbes 30 Under 30 laureate.
             \item Developed a Web3 protocol with goal to innovate decentralized finance (DeFi).
@@ -167,7 +190,6 @@
 
 \end{entrylist}
 
-
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
@@ -183,31 +205,12 @@
 		{2022 - current}
 		{B.Sc. in Mathematics }
 		{University of Warsaw}
-		{\textsl{Relevant courses}: Statistical Data Analysis, Machine Learning (GenAI)}
+		{\textsl{Relevant courses}: Statistical Data Analysis, Machine Learning (\textbf{GenAI})}
     \entry
 		{2021 - 2024}
 		{B.Sc. in Computer Science}
 		{University of Warsaw}
 		{\textsl{Relevant courses}: Machine Learning (classical methods)\\ \textsl{Thesis}: Gitoptim - a tool for automating programmer's work using large language models}
-\end{entrylist}
-
-%----------------------------------------------------------------------------------------
-%	Projects
-%----------------------------------------------------------------------------------------
-\vspace{-15 pt}
-\cvsect{Projects}
-\begin{entrylist}
-    \entry
-		{\phantom}
-		{Git Optim}
-		{}
-		{Developed as part of my Bachelor's thesis in Computer Science. Web application that utilizes Large Language Models to analyze code in git repositories. It reports bugs, offers code improvement suggestions, and automates the generation of unit and Memlab tests.\\[2mm]
-        \texttt{TypeScript, Next.js, FastAPI, Typer, Python, Accelerate, Llama.cpp, ChromaDB}}
-    \entry
-		{}
-		{\vspace{-3mm}}
-		{}
-		{Many more projects are available in my \href{https://lukasz.leszko.dev/}{portfolio} and \href{https://github.com/leszkolukasz}{GitHub profile}.}
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
@@ -237,12 +240,14 @@
     \vspace{-6pt}
     
     \begin{itemize}[topsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=26mm]
-    \item Open source: \underline{contributed to LibreOffice}
+    \item Open source: contributed to LibreOffice
     \item Programming languages (compilers, language design)
     \item Linux
 \end{itemize}
 
 \vspace*{\fill}
+
+% Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji obecnego procesu rekrutacji oraz przyszłych procesów rekrutacyjnych (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO)).
 
 % I hereby give consent for my personal data to be processed by Jane Street for the purpose of conducting recruitment for the position for which I am applying.
 
